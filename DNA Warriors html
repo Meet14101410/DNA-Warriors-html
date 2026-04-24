@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DNA Warriors</title>
+</head>
+
+<body>
+
+    <h1>🧬 DNA Warriors</h1>
+    <p>Test your biology knowledge!</p>
+
+    <h3>Question 1:</h3>
+    <p>What is the shape of DNA?</p>
+
+    <button onclick="checkAnswer('A')">A. Double Helix</button><br><br>
+    <button onclick="checkAnswer('B')">B. Circle</button><br><br>
+    <button onclick="checkAnswer('C')">C. Square</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkAnswer(answer) {
+            if (answer === 'A') {
+                document.getElementById("result").innerHTML =
+                "✅ Correct! DNA is a Double Helix.";
+            } else {
+                document.getElementById("result").innerHTML =
+                "❌ Wrong answer. Try again!";
+            }
+        }
+    </script>
+
+</body>
+</html>
